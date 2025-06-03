@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Jewels of Joy offers exquisite handcrafted jewelry including rings, necklaces, bracelets, and earrings. Discover elegant pieces made with quality craftsmanship." />
+    <meta name="keywords" content="Jewels of Joy, jewelry, handmade jewelry, rings, necklaces, bracelets, earrings, South Africa" />
+    <meta name="author" content="Jewels of Joy" />
+    <title>Jewels of Joy | Elegant Handmade Jewelry in South Africa</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="logo-section">
+          <!-- Main heading of the website, usually the brand name. -->
+          <h1>JEWELS OF JOY</h1>
+
+          <!-- Subheading with a slogan or message for the brand. -->
+          <h2>WHERE EVERY GEM TELLS A STORY</h2>
+
+          <!-- Logo image for the brand. It also has alt text for accessibility and a height of 300 pixels. -->
+          <img src="images/THE LOGO.jpg" height="300" alt="Jewels of Joy Logo - Handcrafted jewelry brand from South Africa" />
+        </div>
+
+        <!-- Display Current Date and Time -->
+        <div class="clock-section">
+          <div class="clock">
+            <div class="time" id="current-time"></div>
+            <div class="date" id="current-date"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Navigation menu with links to other pages on the website. -->
+    <nav>
+      <!-- Each link takes the user to a different page on the website. The icons next to each link are from Font Awesome. -->
+      <a href="home.html" class="active"><i class="fa-solid fa-house"></i> Home</a> |
+      <a href="about.html"><i class="fa-solid fa-user"></i> About</a> |
+      <a href="products.html"
+        ><i class="fa-solid fa-cart-shopping"></i> Products</a
+      >
+      | <a href="gallery.html"><i class="fa-solid fa-images"></i> Gallery</a> |
+      <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a> |
+      <a href="cart.html" class="cart-nav-link"><i class="fa-solid fa-shopping-basket"></i> Cart <span class="cart-count">0</span></a>
+    </nav>
+
+    <!-- Section that briefly introduces the store and what it offers. -->
+    <section>
+      <p>
+        Welcome To Jewels Of Joy - Where Elegance Meets Craftsmanship. Discover
+        a stunning collection of rings, necklaces, bracelets, and earrings,
+        designed to make every moment sparkle. Find your piece today.
+      </p>
+    </section>
+
+    <!-- Section showcasing featured products for sale. -->
+    <section>
+      <!-- Heading for the product section. -->
+      <h1>FEATURED PRODUCTS SELECTION</h1>
+
+      <!-- Subheading with a brief description of the featured products. -->
+      <h3>
+        A collection of simple yet stunning pieces to add a special touch to
+        your look. Handpicked favourites loved by our community.
+      </h3>
+
+      <!-- Container that holds different product cards. Each card represents a product. -->
+      <div class="product-section">
+        <!-- Product card for necklaces. -->
+        <div class="product-card">
+          <h3>Elegant Necklaces</h3>
+          <p>
+            Beautiful necklaces perfect for everyday wear or special occasions.
+          </p>
+          <!-- Two images of elegant necklaces. -->
+          <img
+            src="images/asdfgghj.webp"
+            height="200"
+            alt="Elegant gold necklace with minimalist pendant design"
+          />
+          <img src="images/dfgh.jpg" height="200" alt="Luxury diamond pendant necklace with silver chain" />
+        </div>
+
+        <!-- Product card for bracelets. -->
+        <div class="product-card">
+          <h3>Classic Bracelets</h3>
+          <p>Stylish bracelets that add a touch of charm to any outfit.</p>
+          <!-- Two images of classic bracelets. -->
+          <img
+            src="images/61w0SkCon4L._AC_UY1000_.jpg"
+            height="200"
+            alt="Silver link bracelet with modern design"
+          />
+          <img
+            src="images/file-JhpDzNg6j2dEoneoX4tWsL.webp"
+            height="200"
+            alt="Charm bracelet with decorative elements"
+          />
+        </div>
+
+        <!-- Product card for rings. -->
+        <div class="product-card">
+          <h3>Minimalist Rings</h3>
+          <p>
+            Delicate and timeless rings designed for a subtle, elegant look.
+          </p>
+          <!-- Two images of minimalist rings. -->
+          <img
+            src="images/518DIXKxGHL._AC_UY1000_.jpg"
+            height="200"
+            alt="Crystal engagement ring with silver band"
+          />
+          <img
+            src="images/51RtymkDESL._AC_UY1000_.jpg"
+            height="200"
+            alt="Minimalist silver band ring for everyday wear"
+          />
+        </div>
+
+        <!-- Product card for earrings. -->
+        <div class="product-card">
+          <h3>Chic Hoop Earrings</h3>
+          <p>
+            Lightweight and stylish, these earrings complete any look
+            effortlessly.
+          </p>
+          <!-- Two images of chic hoop earrings. -->
+          <img
+            src="images/515VMmlFZ0L._AC_UF1000,1000_QL80_FMwebp_.webp"
+            height="200"
+            alt="Delicate pearl drop earrings with gold accents"
+          />
+          <img
+            src="images/71JKtfH6qHL._AC_UF1000,1000_QL80_FMwebp_.webp"
+            height="200"
+            alt="Classic gold hoop earrings for everyday elegance"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer section with contact information and social media links. -->
+    <footer>
+      <!-- Heading for the contact section. -->
+      <h1>Contact Us:</h1>
+
+      <!-- Phone number with a Font Awesome phone icon. -->
+      <h3><i class="fa-solid fa-phone"></i> (+27) 10 140 3655</h3>
+
+      <!-- Link to send an email with a Font Awesome envelope icon. -->
+      <a href="mailto:jewelsofjoy@gmail.com"
+        ><i class="fa-solid fa-envelope"></i> Email Us</a
+      >
+      <br />
+
+      <!-- Link to the brand's Instagram page with a Font Awesome Instagram icon. -->
+      <a
+        href="http://www.instagram.com/jewels_of_joy_joj?igsh=MX10cm55MjRibWx4cw=="
+        ><i class="fa-brands fa-instagram"></i> Instagram</a
+      >
+
+      <!-- Physical store location with a Font Awesome location icon. -->
+      <h3>
+        <i class="fa-solid fa-location-dot"></i> Mall @ The Junction,
+        Rosettenville, South Africa
+      </h3>
+      
+      <!-- Newsletter Signup Section -->
+      <div class="newsletter-container">
+        <h3><i class="fa-solid fa-envelope-open-text"></i> Subscribe to Our Newsletter</h3>
+        <p>Get updates on new products and exclusive offers</p>
+        
+        <!-- Newsletter Form -->
+        <div class="newsletter-form">
+          <form id="newsletterForm">
+            <div class="form-group">
+              <label for="newsletter-email">Your Email Address:</label>
+              <input type="email" id="newsletter-email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-checkbox">
+              <input type="checkbox" id="newsletter-consent" required>
+              <label for="newsletter-consent">I agree to receive updates about new products and offers</label>
+            </div>
+            <button type="submit" class="newsletter-submit">Subscribe</button>
+          </form>
+          <div id="newsletter-success" style="display: none; color: green; margin-top: 10px;">
+            Thank you for subscribing to our newsletter!
+          </div>
+        </div>
+      </div>
+    </footer>
+    <br />
+    <!-- Copyright line -->
+    <hr />
+    <p style="text-align: center; font-size: 0.9em; color: #000000">
+      &copy; <span class="current-year"></span> Jewels of Joy. All rights reserved.
+    </p>
+    
+    <script>
+      // Handle newsletter form submission
+      document.getElementById('newsletterForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent actual form submission
+        
+        // Get form values
+        const email = document.getElementById('newsletter-email').value;
+        const consent = document.getElementById('newsletter-consent').checked;
+        
+        // Basic validation
+        if (email && consent) {
+          // Show success message
+          document.getElementById('newsletter-success').style.display = 'block';
+          
+          // Clear form
+          document.getElementById('newsletterForm').reset();
+          
+          // In a real implementation, you would send this data to your server here
+          console.log('Newsletter signup:', { email, consent });
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contact Jewels of Joy for inquiries about our handcrafted jewelry collections. Visit our store in South Africa or reach out online for personalized assistance." />
+    <meta name="keywords" content="Jewels of Joy, contact us, jewelry inquiry, jewelry store, South Africa jewelry, jewelry consultation" />
+    <meta name="author" content="Jewels of Joy" />
+    <title>Contact Us - Jewels of Joy | Get in Touch About Our Collections</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="script.js" defer></script>
+    <style>
+      body {
+        text-align: center;
+        margin: 20px;
+      }
+      img {
+        margin: 10px;
+      }
+      a {
+        display: inline-block;
+        margin: 5px;
+        text-decoration: none;
+        color: #007bff;
+      }
+      h1,
+      h2,
+      h3 {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="logo-section">
+          <!-- Main heading of the website, usually the brand name. -->
+          <h1>JEWELS OF JOY</h1>
+
+          <!-- Subheading with a slogan or message for the brand. -->
+          <h2>WHERE EVERY GEM TELLS A STORY</h2>
+
+          <!-- Logo image for the brand. It also has alt text for accessibility and a height of 300 pixels. -->
+          <img src="images/THE LOGO.jpg" height="300" alt="Jewels of Joy Logo - Handcrafted jewelry brand from South Africa" />
+        </div>
+
+        <!-- Display Current Date and Time -->
+        <div class="clock-section">
+          <div class="clock">
+            <div class="time" id="current-time"></div>
+            <div class="date" id="current-date"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Navigation Links for easy site navigation -->
+    <nav>
+      <a href="home.html"><i class="fa-solid fa-house"></i> Home</a> |
+      <a href="about.html"><i class="fa-solid fa-user"></i> About</a> |
+      <a href="products.html"
+        ><i class="fa-solid fa-cart-shopping"></i> Products</a
+      >
+      | <a href="gallery.html"><i class="fa-solid fa-images"></i> Gallery</a> |
+      <a href="contact.html" class="active"><i class="fa-solid fa-envelope"></i> Contact</a> |
+      <a href="cart.html" class="cart-nav-link"><i class="fa-solid fa-shopping-basket"></i> Cart <span class="cart-count">0</span></a>
+    </nav>
+
+    <main>
+      <section>
+        <!-- Contact Section Heading -->
+        <h1>CONTACT US</h1>
+        <h2>We would love to hear from you!</h2>
+        <!-- Description of how users can contact -->
+        <p>
+          If you have a question about our jewelry or need help picking out the
+          right pieces, we are here for you! Just contact us and our team will
+          be glad to assist you.
+        </p>
+        <br />
+
+        <!-- Contact Form -->
+        <div class="contact-container">
+          <div class="contact-form-wrapper">
+            <h2><i class="fa-solid fa-paper-plane"></i> Send Us a Message</h2>
+            <form action="mailto:jewelsofjoy@gmail.com" method="post" enctype="text/plain" class="contact-form" id="contactForm">
+              <div class="form-group">
+                <label for="name"><i class="fa-solid fa-user"></i> Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required value="Your Name" />
+                <span class="error-message" id="nameError"></span>
+              </div>
+              
+              <div class="form-group">
+                <label for="email"><i class="fa-solid fa-envelope"></i> Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required value="Your Email" />
+                <span class="error-message" id="emailError"></span>
+              </div>
+              
+              <div class="form-group">
+                <label for="phone"><i class="fa-solid fa-phone"></i> Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" value="Your Phone Number" />
+              </div>
+              
+              <div class="form-group">
+                <label for="subject"><i class="fa-solid fa-tag"></i> Subject</label>
+                <select id="subject" name="subject">
+                  <option value="" disabled selected>What can we help you with?</option>
+                  <option value="product">Product Inquiry</option>
+                  <option value="order">Order Status</option>
+                  <option value="custom">Custom Jewelry Request</option>
+                  <option value="other">Other</option>
+                </select>
+                <span class="error-message" id="subjectError"></span>
+              </div>
+              
+              <div class="form-group">
+                <label for="message"><i class="fa-solid fa-comment"></i> Your Message</label>
+                <textarea id="message" name="message" placeholder="Tell us how we can help you..." rows="5" required>Your Message</textarea>
+                <span class="error-message" id="messageError"></span>
+              </div>
+              
+              <button type="submit" class="submit-button" id="submitBtn">
+                <i class="fa-solid fa-paper-plane"></i> Send Message
+              </button>
+            </form>
+          </div>
+          
+          <div class="contact-info">
+            <h2><i class="fa-solid fa-address-book"></i> Other Ways to Reach Us</h2>
+            <div class="contact-method">
+              <i class="fa-solid fa-phone fa-fw"></i>
+              <div>
+                <h3>Phone</h3>
+                <p>(+27) 10 140 3655</p>
+              </div>
+            </div>
+            
+            <div class="contact-method">
+              <i class="fa-solid fa-envelope fa-fw"></i>
+              <div>
+                <h3>Email</h3>
+                <p><a href="mailto:jewelsofjoy@gmail.com">jewelsofjoy@gmail.com</a></p>
+              </div>
+            </div>
+            
+            <div class="contact-method">
+              <i class="fa-brands fa-instagram fa-fw"></i>
+              <div>
+                <h3>Instagram</h3>
+                <p><a href="http://www.instagram.com/jewels_of_joy_joj?igsh=MX10cm55MjRibWx4cw==">@jewels_of_joy_joj</a></p>
+              </div>
+            </div>
+            
+            <div class="contact-method">
+              <i class="fa-solid fa-location-dot fa-fw"></i>
+              <div>
+                <h3>Our Store</h3>
+                <p>Mall @ The Junction, Rosettenville, South Africa</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Store Visit Information -->
+        <div class="store-info">
+          <h1><i class="fa-solid fa-store"></i> VISIT OUR STORE</h1>
+          <p>
+            Experience the beauty of our collection in person. Stop by our store
+            and let us help you find something special.
+          </p>
+
+          <!-- Store Opening Hours -->
+          <div class="opening-hours">
+            <h2><i class="fa-solid fa-clock"></i> Opening Hours</h2>
+            <div class="hours-grid">
+              <div class="day-time">
+                <span class="day">Monday - Friday:</span>
+                <span class="time">9 AM - 6 PM</span>
+              </div>
+              <div class="day-time">
+                <span class="day">Saturday:</span>
+                <span class="time">9 AM - 4 PM</span>
+              </div>
+              <div class="day-time">
+                <span class="day">Sunday:</span>
+                <span class="time">Closed</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Map Section to See the Store Location -->
+          <h2><i class="fa-solid fa-map-location-dot"></i> Find Us Here</h2>
+          <div class="map-container">
+            <!-- Embedded Google Map for easy location access -->
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3578.5191155938655!2d28.05253267524776!3d-26.24481037705155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950f034573cdef%3A0x99748329c120f399!2sMall%20%40%20The%20Junction!5e0!3m2!1sen!2sza!4v1742505388723!5m2!1sen!2sza"
+              width="100%" 
+              height="450"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+    <br />
+    <!-- Copyright line -->
+    <hr />
+    <p style="text-align: center; font-size: 0.9em; color: #000000">
+      &copy; <span class="current-year"></span> Jewels of Joy. All rights reserved.
+    </p>
+  </body>
+</html>

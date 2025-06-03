@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Browse Jewels of Joy's exquisite collection of handcrafted jewelry including necklaces, bracelets, rings, and earrings. Quality pieces at affordable prices." />
+    <meta name="keywords" content="jewelry collection, handmade jewelry, necklaces, bracelets, rings, earrings, Jewels of Joy, South Africa jewelry, affordable luxury" />
+    <meta name="author" content="Jewels of Joy" />
+    <title>Products - Jewels of Joy | Elegant Handcrafted Jewelry Collection</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <div class="header-container">
+        <div class="logo-section">
+          <!-- Main heading of the website, usually the brand name. -->
+          <h1>JEWELS OF JOY</h1>
+
+          <!-- Subheading with a slogan or message for the brand. -->
+          <h2>WHERE EVERY GEM TELLS A STORY</h2>
+
+          <!-- Logo image for the brand. It also has alt text for accessibility and a height of 300 pixels. -->
+          <img src="images/THE LOGO.jpg" height="300" alt="Jewels of Joy Logo - Handcrafted jewelry brand from South Africa" />
+        </div>
+
+        <!-- Display Current Date and Time -->
+        <div class="clock-section">
+          <div class="clock">
+            <div class="time" id="current-time"></div>
+            <div class="date" id="current-date"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Navigation Links -->
+    <nav>
+      <a href="home.html"><i class="fa-solid fa-house"></i> Home</a> |
+      <a href="about.html"><i class="fa-solid fa-user"></i> About</a> |
+      <a href="products.html" class="active"
+        ><i class="fa-solid fa-cart-shopping"></i> Products</a
+      >
+      | <a href="gallery.html"><i class="fa-solid fa-images"></i> Gallery</a> |
+      <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a> |
+      <a href="cart.html" class="cart-nav-link"><i class="fa-solid fa-shopping-basket"></i> Cart <span class="cart-count">0</span></a>
+    </nav>
+
+    <!-- Our Collection Section -->
+    <main>
+      <section class="product-section">
+        <h1>Our Collection</h1>
+        <p>
+          At Jewels of Joy, we think that every piece of jewelry has its own
+          story to share. Our collection is made to add elegance, simplicity,
+          and lasting beauty to your daily life. Check out our beautifully made
+          pieces and discover the ideal one for yourself or someone special.
+        </p>
+
+        <h1>Featured Pieces</h1>
+        <div class="product-gallery">
+          <div class="product-card" data-id="necklace1" data-name="Elegant Necklace" data-price="499" data-image="images/picture1.jpg">
+            <h3>Elegant Necklace - R499</h3>
+            <img
+              src="images/picture1.jpg"
+              height="200"
+              alt="Elegant gold necklace with pendant - Jewels of Joy collection"
+            />
+            <img
+              src="images/picture2.jpg"
+              height="200"
+              alt="Elegant necklace side view - Handcrafted jewelry by Jewels of Joy"
+            />
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+
+          <div class="product-card" data-id="bracelet1" data-name="Silver Charm Bracelet" data-price="399" data-image="images/picture3.jpg">
+            <h3>Silver Charm Bracelet - R399</h3>
+            <img
+              src="images/picture3.jpg"
+              height="200"
+              alt="Silver charm bracelet with decorative elements - Jewels of Joy collection"
+            />
+            <img
+              src="images/picture4.jpg"
+              height="200"
+              alt="Silver charm bracelet clasp detail - Handcrafted by Jewels of Joy"
+            />
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+
+          <div class="product-card" data-id="ring1" data-name="Classic Diamond Ring" data-price="799" data-image="images/picture5.webp">
+            <h3>Classic Diamond Ring - R799</h3>
+            <img
+              src="images/picture5.webp"
+              height="200"
+              alt="Classic diamond ring with elegant setting - Premium Jewels of Joy collection"
+            />
+            <img
+              src="images/6.webp"
+              height="200"
+              alt="Diamond ring side profile view - Handcrafted by Jewels of Joy"
+            />
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+
+          <div class="product-card" data-id="earring1" data-name="Pearl Drop Earrings" data-price="349" data-image="images/8.jpg">
+            <h3>Pearl Drop Earrings - R349</h3>
+            <img src="images/8.jpg" height="200" alt="Pearl drop earrings with silver hooks - Elegant Jewels of Joy design" />
+            <img src="images/9.jpg" height="200" alt="Pearl drop earrings worn view - Handcrafted by Jewels of Joy" />
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+
+          <div class="product-card" data-id="pendant1" data-name="Personalized Engraved Pendant" data-price="599" data-image="images/7.jpg">
+            <h3>Personalized Engraved Pendant - R599</h3>
+            <img src="images/7.jpg" height="200" alt="Personalized engraved pendant necklace - Custom Jewels of Joy piece" />
+            <img
+              src="images/41adwFRrYrL._AC_UY1000_.jpg"
+              height="200"
+              alt="Engraved pendant detail view - Customizable Jewels of Joy jewelry"
+            />
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Choose Section -->
+      <section>
+        <h1>Why Choose Our Jewelry</h1>
+        <div class="features-container">
+          <div class="feature-item">
+            <i class="fa-solid fa-gem fa-2x"></i>
+            <h3>High-Quality Materials</h3>
+            <p>Made with care to ensure lasting beauty and durability.</p>
+          </div>
+          
+          <div class="feature-item">
+            <i class="fa-solid fa-clock fa-2x"></i>
+            <h3>Timeless & Versatile Designs</h3>
+            <p>Perfect for any occasion, from everyday wear to special events.</p>
+          </div>
+          
+          <div class="feature-item">
+            <i class="fa-solid fa-tag fa-2x"></i>
+            <h3>Affordable Luxury</h3>
+            <p>Beautiful jewelry without the high price tag.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to Action Section -->
+      <section>
+        <div class="cta-container">
+          <h1>Ready to Find Your Perfect Piece?</h1>
+          <p>Visit our store or contact us to explore our full collection.</p>
+          <div class="cta-buttons">
+            <a href="contact.html" class="cta-button">Contact Us</a>
+            <a href="gallery.html" class="cta-button secondary">View Gallery</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Contact Section -->
+    <footer>
+      <h1>Contact Us:</h1>
+      <h3>Phone: <i class="fa-solid fa-phone"></i> (+27) 10 140 3655</h3>
+      <a href="mailto:jewelsofjoy@gmail.com"
+        ><i class="fa-solid fa-envelope"></i> Email Us</a
+      ><br />
+      <a
+        href="http://www.instagram.com/jewels_of_joy_joj?igsh=MX10cm55MjRibWx4cw=="
+        ><i class="fa-brands fa-instagram"></i> Instagram</a
+      >
+      <!-- Physical store location with a Font Awesome location icon. -->
+      <h3>
+        <i class="fa-solid fa-location-dot"></i> Mall @ The Junction,
+        Rosettenville, South Africa
+      </h3>
+    </footer>
+    <br />
+    <!-- Copyright line -->
+    <hr />
+    <p style="text-align: center; font-size: 0.9em; color: #000000">
+      &copy; <span class="current-year"></span> Jewels of Joy. All rights reserved.
+    </p>
+    
+    <!-- Toast Container -->
+    <div class="toast-container" id="toast-container">
+      <!-- Toasts will be added here dynamically -->
+    </div>
+  </body>
+</html>

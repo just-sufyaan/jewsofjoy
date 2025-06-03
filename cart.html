@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="View your shopping cart at Jewels of Joy. Review selected jewelry items before checkout." />
+    <meta name="keywords" content="jewelry shopping cart, Jewels of Joy cart, jewelry checkout" />
+    <meta name="author" content="Jewels of Joy" />
+    <title>Shopping Cart - Jewels of Joy | Review Your Selection</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <div class="header-container">
+        <div class="logo-section">
+          <!-- Main heading of the website, usually the brand name. -->
+          <h1>JEWELS OF JOY</h1>
+
+          <!-- Subheading with a slogan or message for the brand. -->
+          <h2>WHERE EVERY GEM TELLS A STORY</h2>
+
+          <!-- Logo image for the brand. It also has alt text for accessibility and a height of 300 pixels. -->
+          <img src="images/THE LOGO.jpg" height="300" alt="Jewels of Joy Logo - Handcrafted jewelry brand from South Africa" />
+        </div>
+
+        <!-- Display Current Date and Time -->
+        <div class="clock-section">
+          <div class="clock">
+            <div class="time" id="current-time"></div>
+            <div class="date" id="current-date"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Navigation Links -->
+    <nav>
+      <a href="home.html"><i class="fa-solid fa-house"></i> Home</a> |
+      <a href="about.html"><i class="fa-solid fa-user"></i> About</a> |
+      <a href="products.html"><i class="fa-solid fa-cart-shopping"></i> Products</a> |
+      <a href="gallery.html"><i class="fa-solid fa-images"></i> Gallery</a> |
+      <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a> |
+      <a href="cart.html" class="cart-nav-link active"><i class="fa-solid fa-shopping-basket"></i> Cart <span class="cart-count"></span></a>
+    </nav>
+
+    <!-- Cart Section -->
+    <section>
+      <h1>Your Shopping Cart</h1>
+      <div id="cart-empty-message">
+        <p>Your cart is currently empty.</p>
+        <a href="products.html" class="cta-button">Continue Shopping</a>
+      </div>
+      
+      <div id="cart-container">
+        <!-- Cart items will be dynamically added here -->
+      </div>
+      
+      <div id="cart-summary">
+        <div class="cart-total">
+          <h3>Total: R<span id="cart-total-amount">0</span></h3>
+        </div>
+        
+        <div class="cart-actions">
+          <button id="clear-cart" class="button-secondary">
+            <i class="fa-solid fa-trash"></i> Clear Cart
+          </button>
+          <button id="checkout-button" class="button-primary">
+            <i class="fa-solid fa-credit-card"></i> Proceed to Checkout
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <h1>Contact Us:</h1>
+      <h3>Phone: <i class="fa-solid fa-phone"></i> (+27) 10 140 3655</h3>
+      <a href="mailto:jewelsofjoy@gmail.com"
+        ><i class="fa-solid fa-envelope"></i> Email Us</a
+      ><br />
+      <a
+        href="http://www.instagram.com/jewels_of_joy_joj?igsh=MX10cm55MjRibWx4cw=="
+        ><i class="fa-brands fa-instagram"></i> Instagram</a
+      >
+      <h3>
+        <i class="fa-solid fa-location-dot"></i> Mall @ The Junction,
+        Rosettenville, South Africa
+      </h3>
+    </footer>
+    <br />
+    
+    <!-- Copyright line -->
+    <hr />
+    <p style="text-align: center; font-size: 0.9em; color: #000000">
+      &copy; <span class="current-year"></span> Jewels of Joy. All rights reserved.
+    </p>
+    
+    <!-- Toast Container -->
+    <div class="toast-container" id="toast-container">
+      <!-- Toasts will be added here dynamically -->
+    </div>
+    
+    <!-- Confirmation Dialog -->
+    <div class="confirmation-overlay" id="confirmation-overlay">
+      <div class="confirmation-dialog">
+        <h3>Clear Shopping Cart</h3>
+        <p>Are you sure you want to remove all items from your cart?</p>
+        <div class="confirmation-actions">
+          <button class="confirm-yes" id="confirm-yes">Yes, Clear Cart</button>
+          <button class="confirm-no" id="confirm-no">No, Keep Items</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html> 

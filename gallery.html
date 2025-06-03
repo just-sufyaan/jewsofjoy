@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Explore our stunning collection of handmade jewelry at Jewels of Joy. Browse necklaces, rings, bracelets, and earrings crafted with elegance and quality." />
+    <meta name="keywords" content="jewelry, handmade jewelry, necklaces, rings, bracelets, earrings, Jewels of Joy, South Africa" />
+    <title>Gallery - Jewels of Joy | Elegant Handmade Jewelry Collection</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Add simple lightbox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.css" integrity="sha512-FaAQujRxLMvw+BkmGN3w7u9EdQQr1t0vQoY8KDh09+6SFaWSTe+KrT8oCWg25X91hytm5c5BTmiSGQejkrwAHw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- Simple lightbox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.js" integrity="sha512-/4kQE5RJQYHRhUiK+CZS8UhaJTnLmQkDuf8lOhiP2xLZAvfB8HC96ERCXCtbI4i2UKlR9Zq0EM5K2qmKpJ5vLQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- Our custom script -->
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="logo-section">
+          <!-- Main heading of the website, usually the brand name. -->
+          <h1>JEWELS OF JOY</h1>
+
+          <!-- Subheading with a slogan or message for the brand. -->
+          <h2>WHERE EVERY GEM TELLS A STORY</h2>
+
+          <!-- Logo image for the brand. It also has alt text for accessibility and a height of 300 pixels. -->
+          <img src="images/THE LOGO.jpg" height="300" alt="Jewels of Joy Logo - Handcrafted jewelry brand from South Africa" />
+        </div>
+
+        <!-- Display Current Date and Time -->
+        <div class="clock-section">
+          <div class="clock">
+            <div class="time" id="current-time"></div>
+            <div class="date" id="current-date"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Navigation Links for easy site navigation -->
+    <nav>
+      <a href="home.html"><i class="fa-solid fa-house"></i> Home</a> |
+      <a href="about.html"><i class="fa-solid fa-user"></i> About</a> |
+      <a href="products.html"
+        ><i class="fa-solid fa-cart-shopping"></i> Products</a
+      >
+      | <a href="gallery.html" class="active"><i class="fa-solid fa-images"></i> Gallery</a> |
+      <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a> |
+      <a href="cart.html" class="cart-nav-link"><i class="fa-solid fa-shopping-basket"></i> Cart <span class="cart-count">0</span></a>
+    </nav>
+
+    <!-- Gallery Section showcasing the jewelry collection -->
+    <section class="gallery">
+      <h1>JEWELRY GALLERY</h1>
+      <!-- Short introduction to the gallery -->
+      <p>
+        Welcome to the Jewels of Joy Gallery. A place where style and skill come
+        together. Check out our amazing selection of handmade jewelry that
+        enhances your beauty for any event. Whether you prefer classic designs
+        or contemporary works of art, every item is made with care and
+        dedication.
+      </p>
+
+      <h2>OUR COMPLETE COLLECTION</h2>
+      
+      <!-- Gallery of product images displayed in a grid -->
+      <div class="product-section gallery-container">
+        <!-- All jewelry items -->
+        <div class="gallery-item">
+          <a href="images/asdfgghj.webp" class="gallery-link" title="Elegant Gold Necklace">
+            <img
+              src="images/asdfgghj.webp"
+              alt="Elegant Gold Necklace - Handcrafted jewelry with delicate gold finish"
+            />
+          </a>
+          <p>Elegant Gold Necklace</p>
+        </div>
+        
+        <div class="gallery-item">
+          <a href="images/dfgh.jpg" class="gallery-link" title="Diamond Pendant Necklace">
+            <img
+              src="images/dfgh.jpg"
+              alt="Diamond Pendant Necklace - Sparkling diamond centerpiece on a silver chain"
+            />
+          </a>
+          <p>Diamond Pendant Necklace</p>
+        </div>
+        
+        <div class="gallery-item">
+          <a href="images/picture1.jpg" class="gallery-link" title="Delicate Gold Chain">
+            <img
+              src="images/picture1.jpg"
+              alt="Delicate Gold Chain - Minimalist gold necklace for everyday wear"
+            />
+          </a>
+          <p>Delicate Gold Chain</p>
+        </div>
+        
+        <div class="gallery-item">
+          <a href="images/51RtymkDESL._AC_UY1000_.jpg" class="gallery-link" title="Silver Band Ring">
+            <img
+              src="images/51RtymkDESL._AC_UY1000_.jpg"
+              alt="Silver Band Ring - Minimalist sterling silver ring for everyday elegance"
+            />
+          </a>
+          <p>Silver Band Ring</p>
+        </div>
+        
+        <div class="gallery-item">
+          <a href="images/518DIXKxGHL._AC_UY1000_.jpg" class="gallery-link" title="Crystal Engagement Ring">
+            <img
+              src="images/518DIXKxGHL._AC_UY1000_.jpg"
+              alt="Crystal Engagement Ring - Stunning cut crystal on elegantly designed band"
+            />
+          </a>
+          <p>Crystal Engagement Ring</p>
+        </div>
+        
+        <div class="gallery-item">
+          <a href="images/picture5.webp" class="gallery-link" title="Diamond Statement Ring">
+            <img
+              src="images/picture5.webp"
+              alt="Diamond Statement Ring - Bold and elegant design with premium cut stone"
+            />
+          </a>
+          <p>Diamond Statement Ring</p>
+        </div>
+        
+        <div class="gallery-item">
+          <a href="images/515VMmlFZ0L._AC_UF1000,1000_QL80_FMwebp_.webp" class="gallery-link" title="Delicate Drop Earrings">
+            <img
+              src="images/515VMmlFZ0L._AC_UF1000,1000_QL80_FMwebp_.webp"
+              alt="Delicate Drop Earrings - Elegant pearl earrings with gold accents"
+            />
+          </a>
+          <p>Delicate Drop Earrings</p>
+        </div>
+        
+        <div class="gallery-item">
+          <a href="images/71JKtfH6qHL._AC_UF1000,1000_QL80_FMwebp_.webp" class="gallery-link" title="Gold Hoop Earrings">
+            <img
+              src="images/71JKtfH6qHL._AC_UF1000,1000_QL80_FMwebp_.webp"
+              alt="Gold Hoop Earrings - Classic gold hoops for everyday style"
+            />
+          </a>
+          <p>Gold Hoop Earrings</p>
+        </div>
+        
+        <div class="gallery-item">
+          <a href="images/8.jpg" class="gallery-link" title="Pearl Stud Earrings">
+            <img
+              src="images/8.jpg"
+              alt="Pearl Stud Earrings - Classic pearl studs with silver backing"
+            />
+          </a>
+          <p>Pearl Stud Earrings</p>
+        </div>
+        
+        <div class="gallery-item">
+          <a href="images/file-JhpDzNg6j2dEoneoX4tWsL.webp" class="gallery-link" title="Charm Bracelet">
+            <img
+              src="images/file-JhpDzNg6j2dEoneoX4tWsL.webp"
+              alt="Charm Bracelet - Silver bracelet with unique decorative charms"
+            />
+          </a>
+          <p>Charm Bracelet</p>
+        </div>
+        
+        <div class="gallery-item">
+          <a href="images/61w0SkCon4L._AC_UY1000_.jpg" class="gallery-link" title="Silver Chain Bracelet">
+            <img
+              src="images/61w0SkCon4L._AC_UY1000_.jpg"
+              alt="Silver Chain Bracelet - Sleek silver chain with modern design"
+            />
+          </a>
+          <p>Silver Chain Bracelet</p>
+        </div>
+        
+        <div class="gallery-item">
+          <a href="images/picture3.jpg" class="gallery-link" title="Gold Charm Bracelet">
+            <img
+              src="images/picture3.jpg"
+              alt="Gold Charm Bracelet - Elegant gold chain with decorative elements"
+            />
+          </a>
+          <p>Gold Charm Bracelet</p>
+        </div>
+      </div>
+
+      <!-- Call to action -->
+      <div class="gallery-cta">
+        <h2>Fall in Love With Our Pieces</h2>
+        <p>
+          Explore more of our stunning collection and find the piece that speaks
+          to you.
+        </p>
+        <a href="products.html" class="cta-button">SHOP NOW</a>
+        <p>Let your jewelry journey begin with Jewels of Joy.</p>
+      </div>
+    </section>
+
+    <!-- Contact Section with company contact details -->
+    <footer>
+      <h1>Contact Us:</h1>
+      <h3>Phone: <i class="fa-solid fa-phone"></i> (+27) 10 140 3655</h3>
+      <a href="mailto:jewelsofjoy@gmail.com"
+        ><i class="fa-solid fa-envelope"></i> Email Us</a
+      >
+      <br />
+      <a
+        href="http://www.instagram.com/jewels_of_joy_joj?igsh=MX10cm55MjRibWx4cw=="
+        ><i class="fa-brands fa-instagram"></i> Instagram</a
+      >
+      <!-- Physical store location with a Font Awesome location icon. -->
+      <h3>
+        <i class="fa-solid fa-location-dot"></i> Mall @ The Junction,
+        Rosettenville, South Africa
+      </h3>
+    </footer>
+    <br />
+    <!-- Copyright line -->
+    <hr />
+    <p style="text-align: center; font-size: 0.9em; color: #000000">
+      &copy; <span class="current-year"></span> Jewels of Joy. All rights reserved.
+    </p>
+    
+    <!-- Toast Container -->
+    <div class="toast-container" id="toast-container">
+      <!-- Toasts will be added here dynamically -->
+    </div>
+  </body>
+</html>
